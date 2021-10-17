@@ -1,0 +1,17 @@
+[2021-10-14 14:16:58.225] [exthost] [info] extension host started
+[2021-10-14 14:16:58.308] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication {"startup":false,"extensionId":{"value":"vscode.microsoft-authentication","_lower":"vscode.microsoft-authentication"},"activationEvent":"onAuthenticationRequest:microsoft"}
+[2021-10-14 14:16:58.308] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js
+[2021-10-14 14:16:58.341] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2021-10-14 14:16:58.341] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2021-10-14 14:16:58.346] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-10-14 14:16:58.346] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/git/dist/main
+[2021-10-14 14:16:58.432] [exthost] [info] ExtensionService#_doActivateExtension christian-kohler.path-intellisense {"startup":true,"extensionId":{"value":"christian-kohler.path-intellisense","_lower":"christian-kohler.path-intellisense"},"activationEvent":"*"}
+[2021-10-14 14:16:58.432] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/drachen/.vscode/extensions/christian-kohler.path-intellisense-2.4.0/out/extension.js
+[2021-10-14 14:16:58.465] [exthost] [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css {"startup":true,"extensionId":{"value":"ecmel.vscode-html-css","_lower":"ecmel.vscode-html-css"},"activationEvent":"*"}
+[2021-10-14 14:16:58.465] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/drachen/.vscode/extensions/ecmel.vscode-html-css-1.10.2/dist/extension.js
+[2021-10-14 14:16:58.514] [exthost] [info] ExtensionService#_doActivateExtension kiteco.kite {"startup":true,"extensionId":{"value":"kiteco.kite","_lower":"kiteco.kite"},"activationEvent":"*"}
+[2021-10-14 14:16:58.514] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/drachen/.vscode/extensions/kiteco.kite-0.147.0/dist/kite-extension
+[2021-10-14 14:16:58.563] [exthost] [info] ExtensionService#_doActivateExtension Zignd.html-css-class-completion {"startup":true,"extensionId":{"value":"Zignd.html-css-class-completion","_lower":"zignd.html-css-class-completion"},"activationEvent":"*"}
+[2021-10-14 14:16:58.563] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/drachen/.vscode/extensions/zignd.html-css-class-completion-1.20.0/dist/extension.js
+[2021-10-14 14:16:59.170] [exthost] [info] extension host terminating: parent process 32736 does not exist anymore: kill ESRCH (code: ESRCH) (errno: -3)
+[2021-10-14 14:17:00.187] [exthost] [info] exiting with code 0

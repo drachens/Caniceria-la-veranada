@@ -1,0 +1,7 @@
+[2021-10-14 15:07:33.106] [sharedprocess] [info] Starting to clean up unused language packs.
+[2021-10-14 15:10:37.509] [sharedprocess] [info] Installing extension: octref.vetur
+[2021-10-14 15:10:39.580] [sharedprocess] [info] Downloaded extension: octref.vetur /var/www/html/carniceria2.0/~/.vscode-root/CachedExtensionVSIXs/octref.vetur-0.34.1
+[2021-10-14 15:10:48.423] [sharedprocess] [info] Extracted extension to /home/drachen/.vscode/extensions/.da89a1ed-d9de-43da-a4a1-3bd68d56e3fd: octref.vetur
+[2021-10-14 15:10:48.502] [sharedprocess] [info] Renamed to /home/drachen/.vscode/extensions/octref.vetur-0.34.1
+[2021-10-14 15:10:48.506] [sharedprocess] [info] Installation completed. octref.vetur
+[2021-10-14 15:10:48.563] [sharedprocess] [info] Extensions installed successfully: octref.vetur

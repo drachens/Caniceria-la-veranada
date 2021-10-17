@@ -1,0 +1,8 @@
+[2021-10-16 12:58:23.172] [sharedprocess] [info] Installing extension: octref.vetur
+[2021-10-16 12:58:25.821] [sharedprocess] [info] Downloaded extension: octref.vetur /var/www/html/carniceria2.0/~/.vscode-root/CachedExtensionVSIXs/octref.vetur-0.35.0
+[2021-10-16 12:58:48.115] [sharedprocess] [info] Extracted extension to /home/drachen/.vscode/extensions/.971c33ac-0e81-4dc1-91e0-245fd21bd0fd: octref.vetur
+[2021-10-16 12:58:48.184] [sharedprocess] [info] Renamed to /home/drachen/.vscode/extensions/octref.vetur-0.35.0
+[2021-10-16 12:58:48.189] [sharedprocess] [info] Installation completed. octref.vetur
+[2021-10-16 12:58:48.269] [sharedprocess] [info] Extensions installed successfully: octref.vetur
+[2021-10-16 12:58:55.234] [sharedprocess] [info] Starting to clean up unused language packs.
+[2021-10-17 13:37:30.437] [sharedprocess] [warning] No ptyHost heartbeat after 6 seconds

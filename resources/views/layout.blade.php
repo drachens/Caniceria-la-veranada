@@ -1,6 +1,17 @@
 <?php
 use App\Categorias;
-$categorias = Categorias::all()
+use App\Clientes;
+use App\Usuarios;
+use Illuminate\Support\Facades\DB;
+$categorias = Categorias::all();
+if(Session::get('LoggedUser')){
+    if(Session::get('type') == 'client'){
+        $userInfo = DB::table('clientes')->where('id',Session::get('LoggedUser'))->first();
+    }
+    else{
+        $userInfo = DB::table('usuarios')->where('id',Session::get('LoggedUser'))->first();
+    }
+}
 ?>
 <html lang="en">
 <head>
@@ -31,6 +42,7 @@ $categorias = Categorias::all()
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             @foreach($categorias as $categoria)
                                 <a class="dropdown-item" href="/productos/cat/{{$categoria->id}}">{{ucfirst($categoria->nombre)}}</a>
+                                <div class="dropdown-divider"></div>
                             @endforeach
                         </div>
                     </li>
@@ -38,26 +50,43 @@ $categorias = Categorias::all()
                     <li class="nav-item"><a class=" text-white nav-link" href="#">Sobre nosotros</a></li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                    <button class="btn btn-outline-success my-2 my-sm-0" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administrar</button> 
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{ url('/createProd') }}">Crear producto</a>
-                            <a class="dropdown-item" href="#">Eliminar producto</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Crear oferta</a>
-                            <a class="dropdown-item" href="#">Eliminar oferta</a>
-                            <a class="dropdown-item" href="#">Editar oferta</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="{{ url('/categorias/form/crear') }}">Crear categoria</a>
-                            <a class="dropdown-item" href="#">Eliminar categoria</a>
-                            <a class="dropdown-item" href="#">Editar categoria</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Crear usuarios</a>
-                            <a class="dropdown-item" href="#">Eliminar usuarios</a>
-                        </div>
-                    </li> 
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Ingresa</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="{{ url('/registro') }}">Registrate</a></li>                                
+                    @if(!Session::has('LoggedUser'))
+                        <li class="nav-item"><a class="nav-link text-white" href="{{url('ingreso')}}">Ingresa</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="{{ url('register') }}">Registrate</a></li>                                
+                    @endif
+                    @if(Session::has('LoggedUser'))
+                        @if(Session::get('type')=='admin' or Session::get('type')=='vendedor')
+                        <li class="nav-item dropdown">
+                        <button class="btn btn-outline-success my-2 my-sm-0" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administrar</button> 
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ url('/createProd') }}">Crear producto</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Crear oferta</a>
+                                <a class="dropdown-item" href="#">Eliminar oferta</a>
+                                <a class="dropdown-item" href="#">Editar oferta</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="{{ url('/categorias/form/crear') }}">Crear categoria</a>
+                                <a class="dropdown-item" href="#">Eliminar categoria</a>
+                                <a class="dropdown-item" href="#">Editar categoria</a>
+                            @if(Session::get('type')=='admin')
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="{{ route('ingresoAdmin') }}">Crear usuarios</a>
+                                <a class="dropdown-item" href="#">Eliminar usuarios</a>
+                            </div>
+                            @endif
+                        </li> 
+                        @endif
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-primary ml-2 mr-2" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo "Hola, ".ucwords($userInfo->nombre); ?>
+                            <i class="ml-2 fa fa-chevron-down"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item" href="/miperfil/<?php if(Session::get('type')=='admin' or Session::get('type')=='vendedor'){echo "updateAd";}else if(Session::get('type')=='client'){echo "update";} ?>/{{ Session::get('LoggedUser') }}">Ver Perfil <i class=" ml-2 fa fa-user-circle"></i> </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="{{ route('logout') }}">Cerrar Sesión <i class="ml-2 fa fa-arrow-right" aria-hidden="true"></i> </a>
+                            </div>
+                        </li> 
+                    @endif
                 </ul>
             </div>
         </nav>

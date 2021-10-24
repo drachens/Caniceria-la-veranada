@@ -1947,3 +1947,4 @@ Open repository: /var/www/html
 > git check-ignore -v -z --stdin
 > git remote add https-//github.com/drachens/Caniceria-la-veranada.git https://github.com/drachens/Caniceria-la-veranada.git
 fatal: 'https-//github.com/drachens/Caniceria-la-veranada.git' is not a valid remote name
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /var/www/html/carniceria2.0/public/css/app.css

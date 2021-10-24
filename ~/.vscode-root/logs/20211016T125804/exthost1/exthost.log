@@ -397,3 +397,7 @@
 [2021-10-17 14:35:39.705] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: pathspec '/var/www/html/carniceria2.0/public/storage/imagenes/t9RDjxHubbFMv02TEB2t5ZzW5XR4GfEdqOHckWNu.jpg' is beyond a symbolic link\n","exitCode":128}
 [2021-10-17 14:39:06.186] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 968
 [2021-10-17 14:39:11.339] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 968
+[2021-10-17 14:48:43.147] [exthost] [info] ExtensionService#_doActivateExtension vscode.html-language-features {"startup":false,"extensionId":{"value":"vscode.html-language-features","_lower":"vscode.html-language-features"},"activationEvent":"onLanguage:html"}
+[2021-10-17 14:48:43.176] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/html-language-features/client/dist/node/htmlClientMain
+[2021-10-17 15:02:07.444] [exthost] [info] extension host terminating: received terminate message from renderer
+[2021-10-17 15:02:08.478] [exthost] [info] exiting with code 0

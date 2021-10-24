@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Categorias;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class CategoriasController extends Controller
 {
@@ -36,14 +37,30 @@ class CategoriasController extends Controller
      */
     public function store(Request $request)
     {
-        $data = request()->except('_token');
+        $validator =  Validator::make($request->all(),[
+            'nombre'=>'required|not_regex:/\d/|max:255',
+            'descri'=>'max:65535',
+        ]);
 
-        Categorias::create([
+        $validated = $validator->validated();
+
+        if ($validator->fails()) {
+            return back()
+            ->withErrors($validator)
+            ->withInput($validated);
+        }
+
+        $categoria = Categorias::create([
             'nombre'=>strtolower($request->nombre),
             'descri'=>strtolower($request->descri),
         ]);
 
-        return redirect('/');
+        if($categoria){
+            return back()->with('success','Categoria '.ucwords($request->nombre).' creada!');
+        }
+        else{
+            return back()->with('fail','Error al crear la categoria, intente más tarde.');
+        }
     }
 
     /**

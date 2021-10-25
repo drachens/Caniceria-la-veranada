@@ -4,6 +4,8 @@ use App\Http\Controllers\CategoriasController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClientesController;
 use App\Http\Controllers\ProductosController;
+use App\Http\Controllers\ProcarritosController;
+use App\Http\Controllers\CarritosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +23,14 @@ Route::post('/storageProd',[ProductosController::class,'store']);
 Route::get('/productos/cat/{id}',[ProductosController::class,'index']);
 Route::get('/productos/edit/{id}',[ProductosController::class,'editar']);
 Route::post('/updateProd',[ProductosController::class,'update']);
+Route::get('/borrarProducto/{SKU}',[ProductosController::class,'destroy']);
+//Carrito
+Route::get('/addToCart/{id}',[ProductosController::class,'addCart']);
+
+Route::get('/addToCartLogin/{idProd}/{user}',[ProcarritosController::class,'store']);
+Route::get('/showCarritoLogin/{user}',[CarritosController::class,'index']);
+Route::post('updateCarritoLogin',[ProcarritosController::class,'update']);
+Route::post('deleteCarritoLogin',[ProcarritosController::class,'delete']);
 //Categorias
 Route::get('/categorias/form/crear',[CategoriasController::class,'create']);
 Route::post('/crearCategoria',[CategoriasController::class,'store']);

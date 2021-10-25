@@ -120,21 +120,48 @@ class ProductosController extends Controller
      * @param  \App\Productos  $productos
      * @return \Illuminate\Http\Response
      */
-    public function show(Productos $productos)
+    public function addCart($id)
     {
-        //
+        $producto = Productos::where('SKU',$id)->first();
+
+        if(!$producto){
+            abort(404);
+        }
+        $carrito = session()->get('carrito');
+
+        if(!$carrito){
+            $carrito = [
+                $id=>[
+                'SKU'=>$id,
+                'nombre'=>$producto->nombre,
+                'cantidad'=>1,
+                'precio'=>$producto->precio,
+            ]];
+
+            session()->put('carrito',$carrito);
+            return redirect()->back()->with('success','Producto '.$producto->nombre.' agregado satisfactoriamente!');
+            
+        }
+
+        if(isset($carrito[$id])){
+            $carrito[$id]['cantidad']++;
+            session()->put('carrito',$carrito);
+            return redirect()->back()->with('success','Producto '.$producto->nombre.' agregado satisfactoriamente!');
+            
+        }
+          
+        $carrito[$id] = [
+            'SKU'=>$id,
+            'nombre'=>$producto->nombre,
+            'cantidad'=>1,
+            'precio'=>$producto->precio,
+        ];
+
+        
+        session()->put('carrito',$carrito);
+        return redirect()->back()->with('success','Producto '.$producto->nombre.' agregado satisfactoriamente!');
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Productos  $productos
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Productos $productos)
-    {
-        //
-    }
 
     /**
      * Update the specified resource in storage.
@@ -199,8 +226,10 @@ class ProductosController extends Controller
      * @param  \App\Productos  $productos
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Productos $productos)
+    public function destroy($SKU)
     {
-        //
+        $imagen = Imagenes::where('id_prod',$SKU)->delete();
+        $producto = Productos::where('SKU',$SKU)->delete();
+        return back();
     }
 }

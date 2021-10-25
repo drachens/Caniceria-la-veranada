@@ -1,6 +1,16 @@
 @extends('layout')
 
 @section('content')
+@if(Session::get('success'))   
+    <div class="mt-3 alert alert-success col-4">
+        {{ Session::get('success') }}
+    </div>
+@endif
+@if(Session::get('fail'))
+    <div class="mt-3 col-4 alert alert-danger">
+        {{ Session::get('fail') }}
+    </div>
+@endif
 <hr>
 <div class="row">
     @foreach($prods as $producto)
@@ -48,20 +58,20 @@
                         <i class="fa fa-edit" aria-hidden="true"></i>
                         Editar
                         </a>
-                        <a class="btn btn-danger mx-1" role="button" href="#">
+                        <a class="btn btn-danger mx-1" role="button" href="/borrarProducto/{{$producto->SKU}}">
                         
                         <i class="fa fa-trash" aria-hidden="true"></i>
                         Borrar
                         </a>
                         @else
-                        <a class="card-link btn btn-danger" href="#">
+                        <a class="card-link btn btn-danger" href="/addToCartLogin/{{ $producto->SKU }}/{{Session::get('LoggedUser')}}">
                         
                         <i class="fas fa-shopping-cart"></i>
                         Agregar al carro
                         </a>
                         @endif
                     @else
-                    <a class="card-link btn btn-danger" href="#">
+                    <a class="card-link btn btn-danger" href="/addToCart/{{ $producto->SKU }}">
                         
                             <i class="fas fa-shopping-cart"></i>
                             Agregar al carro

@@ -1,4 +1,5 @@
 <?php
+session();
 use App\Categorias;
 use App\Clientes;
 use App\Usuarios;
@@ -52,7 +53,8 @@ if(Session::get('LoggedUser')){
                 <ul class="navbar-nav ml-auto">
                     @if(!Session::has('LoggedUser'))
                         <li class="nav-item"><a class="nav-link text-white" href="{{url('ingreso')}}">Ingresa</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="{{ url('register') }}">Registrate</a></li>                                
+                        <li class="nav-item"><a class="nav-link text-white" href="{{ url('register') }}">Registrate</a></li> 
+                        <a href="#" class="btn btn-danger" type="button"><i class=" mt-1 fas fa-shopping-cart"></i></a>                               
                     @endif
                     @if(Session::has('LoggedUser'))
                         @if(Session::get('type')=='admin' or Session::get('type')=='vendedor')
@@ -85,7 +87,9 @@ if(Session::get('LoggedUser')){
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="{{ route('logout') }}">Cerrar Sesión <i class="ml-2 fa fa-arrow-right" aria-hidden="true"></i> </a>
                             </div>
-                        </li> 
+                        </li>
+                        <a href="/showCarritoLogin/{{Session::get('LoggedUser')}}" class="btn btn-danger" type="button"><i class=" mt-1 fas fa-shopping-cart"></i></a>
+                        
                     @endif
                 </ul>
             </div>

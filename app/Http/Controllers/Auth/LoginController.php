@@ -10,6 +10,7 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
+
 class LoginController extends Controller
 {
     public function login(Request $request){
@@ -28,9 +29,11 @@ class LoginController extends Controller
             }
             else{
                 if(Hash::check($request->password,$userInfo->password)){
+                    session()->flush();
                     $request->session()->put('LoggedUser',$userInfo->id);
                     $request->session()->put('type','client');
                     return redirect('/');
+                    
                 }
                 else{
                     return back()->with('fail','Contraseña incorrecta.')->withInput($credenciales);
@@ -40,6 +43,7 @@ class LoginController extends Controller
 
         else{
             if(Hash::check($request->password,$userAdmin->password)){
+                session()->flush();//Se borran los datos de session
                 $request->session()->put('LoggedUser',$userAdmin->id);
                 $request->session()->put('type',$userAdmin->rol);
                 return redirect('/');

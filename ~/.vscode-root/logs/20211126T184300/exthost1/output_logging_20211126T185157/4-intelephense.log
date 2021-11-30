@@ -1,0 +1,20 @@
+[Info  - 18:51:57] Initialising intelephense 1.7.1
+[Info  - 18:51:58] Reading state from /var/www/html/carniceria2.0/~/.vscode-root/User/workspaceStorage/32d8e81efa97e051c508e891624d4d82/bmewburn.vscode-intelephense-client/2edfa0a8.
+[Info  - 18:51:59] Initialised in 2161 ms
+[Warn  - 18:52:01] file:///var/www/html/carniceria2.0/vendor/fakerphp/faker/src/Faker/Provider/nl_BE/Text.php is over the maximum file size of 1000000 bytes.
+[Info  - 18:52:01] Indexing started.
+[Info  - 18:52:03] Indexing ended. 49 files indexed in 2s.
+[Info  - 18:52:03] Writing state to /var/www/html/carniceria2.0/~/.vscode-root/User/workspaceStorage/32d8e81efa97e051c508e891624d4d82/bmewburn.vscode-intelephense-client/2edfa0a8.
+[Info  - 18:52:04] Wrote state in 1.3s.
+[Info  - 19:47:24] Indexing started.
+[Info  - 19:47:24] Indexing ended. 2 files indexed in 0s.
+[Info  - 19:47:37] Indexing started.
+[Info  - 19:47:38] Indexing ended. 6 files indexed in 1s.
+[Info  - 19:49:12] Indexing started.
+[Info  - 19:49:12] Indexing ended. 2 files indexed in 0s.
+[Info  - 20:27:41] Indexing started.
+[Info  - 20:27:41] Indexing ended. 2 files indexed in 0s.
+[Info  - 20:27:43] Indexing started.
+[Info  - 20:27:44] Indexing ended. 6 files indexed in 1s.
+[Info  - 20:27:56] Indexing started.
+[Info  - 20:27:56] Indexing ended. 2 files indexed in 0s.

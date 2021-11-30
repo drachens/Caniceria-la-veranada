@@ -6,6 +6,12 @@ use App\Usuarios;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\DB;
+use App\Clientes;
+use App\Carritos;
+use App\Orden_Compra;
+use App\Detalle_Orden;
+use App\Boleta;
 
 class UsuariosController extends Controller
 {
@@ -14,11 +20,90 @@ class UsuariosController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function usuariosIndex()
     {
-        //
+        $users = [];
+        $usuarios = DB::table('usuarios')
+        ->get();
+        $clientes = DB::table('clientes')
+        ->get();
+        foreach($usuarios as $usuario){
+            $user = [
+                'nombre'=>$usuario->nombre,
+                'apellido'=>$usuario->apellido,
+                'rut'=>$usuario->rut,
+                'rol'=>$usuario->rol,
+            ];
+            array_push($users,$user);
+        }
+        foreach($clientes as $cliente){
+            $client = [
+                'nombre'=>$cliente->nombre,
+                'apellido'=>$cliente->apellido,
+                'rut'=>$cliente->rut,
+                'rol'=>'cliente',
+            ];
+            array_push($users,$client);
+        }
+        return view('admin.eliminarUsuario',compact('users'));
     }
 
+    function eliminarUser(Request $request){
+        $rut = $request->rut;
+        $rol = $request->rol;
+        if($rol == 'admin'){
+            return back()->with('error','No se puede eliminar cuentas de Administrador.');
+        }
+        else if($rol == 'vendedor'){
+            $delete = DB::table('usuarios')
+            ->where('rut',$rut)
+            ->delete();
+            if($delete){
+                return back()->with('success','Usuario vendedor eliminado correctamente.');
+            }
+            else{
+                return back()->with('error','Hubo un error, por favor intente más tarde.');
+            }
+        }
+        else{
+            $user = Clientes::where('rut',$rut)->first();
+            $id_user = $user->id;
+            $carrito = Carritos::where('id_cli',$id_user)->first();
+            $id_carrito = $carrito->id;
+            $deleteProdCarrito = DB::table('procarritos')
+            ->where('id_carrito',$id_carrito)
+            ->delete();
+            if($deleteProdCarrito){
+                $deleteCarrito=Carritos::where('id',$id_carrito)
+                ->delete();
+            }
+            $ordenes = Orden_Compra::where('rut_cliente',$rut)
+            ->get();
+            foreach($ordenes as $orden){
+                $num_orden = $orden->numero;
+                $detalles = Detalle_Orden::where('num_orden',$num_orden)
+                ->get();
+                foreach($detalles as $detalle){
+                    Detalle_Orden::where('id',$detalle->id)
+                    ->delete();
+                }
+                Orden_Compra::where('numero',$orden->numero)
+                ->delete();
+            }
+            Boleta::where('rut',$rut)->delete();
+
+            $deleteCliente = DB::table('clientes')
+            ->where('rut',$rut)
+            ->delete();
+            if($deleteCliente){
+                return back()->with('success','Usuario cliente eliminado correctamente.');
+            }
+            else{
+                return back()->with('error','Hubo un error.');
+            }
+
+        }
+    }
     /**
      * Show the form for creating a new resource.
      *

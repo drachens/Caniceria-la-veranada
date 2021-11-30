@@ -11,8 +11,31 @@
         {{ Session::get('fail') }}
     </div>
 @endif
+<?php 
+    use App\Categorias;
+    use App\Productos;
+    if($prods){
+        foreach($prods as $prod){
+            $cat_aux = $prod->SKU;
+            $id_cat = Productos::where('SKU',$cat_aux ?? '')->first()->id_cat;
+            $cat = Categorias::where('id',$id_cat)->first()->nombre; 
+        }
+    }
+    else{
+        $cat = 0;
+    }
+?>
 <hr>
 <div class="row">
+
+    <div class="col-12">
+        <div class="row">
+            <div class="col-5">
+                <h1 class="mt-3 mb-4 ml-2">{{ucwords($cat ?? '')}}</h1>
+            </div>
+        </div>
+    </div>
+
     @foreach($prods as $producto)
     <div class="col-12 col-sm-8 col-md-6 col-lg-4 mb-4 mt-1">
         <div class="card text-white bg-dark text-center">
@@ -49,11 +72,11 @@
                 <hr style="height:1px;border-width:1px;color:red;background-color:grey">
                 <div class="buy d-flex align-items-center">
                     <div class="price text-success flex-item" style="margin-right:auto">
-                        <h5 class="mt-4">${{$producto->precio}}</h5>
+                        <h5 class="mt-4 font-weight-bold">${{$producto->precio}}</h5>
                     </div>
                     @if(Session::has('LoggedUser'))
                         @if(Session::get('type')=='admin' or Session::get('type')=='vendedor')
-                        <a class="btn btn-success mx-1" role="button" href="/productos/edit/{{$producto->SKU }}">
+                        <a class="btn btn-gold mx-1" role="button" href="/productos/edit/{{$producto->SKU }}">
                         
                         <i class="fa fa-edit" aria-hidden="true"></i>
                         Editar
@@ -64,14 +87,14 @@
                         Borrar
                         </a>
                         @else
-                        <a class="card-link btn btn-danger" href="/addToCartLogin/{{ $producto->SKU }}/{{Session::get('LoggedUser')}}">
+                        <a class="card-link btn btn-gold" href="/addToCartLogin/{{ $producto->SKU }}/{{Session::get('LoggedUser')}}">
                         
                         <i class="fas fa-shopping-cart"></i>
                         Agregar al carro
                         </a>
                         @endif
                     @else
-                    <a class="card-link btn btn-danger" href="/addToCart/{{ $producto->SKU }}">
+                    <a class="card-link btn btn-gold" href="/addToCart/{{ $producto->SKU }}">
                         
                             <i class="fas fa-shopping-cart"></i>
                             Agregar al carro

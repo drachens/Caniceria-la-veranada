@@ -1,0 +1,373 @@
+Looking for git in: git
+Using git 2.17.1 from git
+> git rev-parse --git-dir
+Open repository: /var/www/html/carniceria2.0
+> git status -z -u
+> git check-ignore -v -z --stdin
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :public/css/app.css
+> git ls-files --stage -- /var/www/html/carniceria2.0/public/css/app.css
+> git cat-file -s d7fcae0aa55b612510a02e8d5e5291a87526ae12
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :app/Http/Controllers/ProductosController.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/app/Http/Controllers/ProductosController.php
+> git cat-file -s f07f7c8ce7ff3ce38624b20b54420d737713faef
+> git show --textconv :resources/views/layout.blade.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/resources/views/layout.blade.php
+> git cat-file -s 76dbe4f76747923d169843db1054795fbc3472be
+> git check-ignore -v -z --stdin
+> git show --textconv :routes/web.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/routes/web.php
+> git cat-file -s 19a6ba470b93f0566d5ec06e8e13f2de9370d439
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :app/Http/Controllers/OrdenCompraController.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/app/Http/Controllers/OrdenCompraController.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show --textconv :database/migrations/2021_11_26_224723_create_orden__compras_table.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/database/migrations/2021_11_26_224723_create_orden__compras_table.php
+> git show --textconv :database/migrations/2021_11_26_224723_create_orden__compra_table.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/database/migrations/2021_11_26_224723_create_orden__compra_table.php
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :database/migrations/2021_10_14_232036_create_clientes_table.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/database/migrations/2021_10_14_232036_create_clientes_table.php
+> git cat-file -s ab95cde330e534df9ebba6b091a8f45cd4bd278e
+> git show --textconv :database/migrations/2021_11_26_224723_create_orden__compra_table.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/database/migrations/2021_11_26_224723_create_orden__compra_table.php
+> git show --textconv :database/migrations/2021_10_14_232036_create_clientes_table.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/database/migrations/2021_10_14_232036_create_clientes_table.php
+> git cat-file -s ab95cde330e534df9ebba6b091a8f45cd4bd278e
+> git show --textconv :database/migrations/2021_11_26_224723_create_orden__compra_table.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/database/migrations/2021_11_26_224723_create_orden__compra_table.php
+> git show --textconv :database/migrations/2021_10_14_232036_create_clientes_table.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/database/migrations/2021_10_14_232036_create_clientes_table.php
+> git cat-file -s ab95cde330e534df9ebba6b091a8f45cd4bd278e
+> git show --textconv :database/migrations/2021_11_26_224723_create_orden__compra_table.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/database/migrations/2021_11_26_224723_create_orden__compra_table.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :database/migrations/2021_10_14_232036_create_clientes_table.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/database/migrations/2021_10_14_232036_create_clientes_table.php
+> git cat-file -s ab95cde330e534df9ebba6b091a8f45cd4bd278e
+> git show --textconv :app/Http/Controllers/ProductosController.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/app/Http/Controllers/ProductosController.php
+> git cat-file -s f07f7c8ce7ff3ce38624b20b54420d737713faef
+> git show --textconv :database/migrations/2021_11_26_224723_create_orden__compra_table.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/database/migrations/2021_11_26_224723_create_orden__compra_table.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :database/migrations/2021_11_26_232741_create_detalle__ordens_table.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/database/migrations/2021_11_26_232741_create_detalle__ordens_table.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :database/migrations/2021_11_26_232741_create_detalle__orden_table.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/database/migrations/2021_11_26_232741_create_detalle__orden_table.php
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :routes/web.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/routes/web.php
+> git cat-file -s 19a6ba470b93f0566d5ec06e8e13f2de9370d439
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :app/Http/Controllers/CarritosController.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/app/Http/Controllers/CarritosController.php
+> git cat-file -s 770fe977331fb818fc2e1590437602aea2163d61
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :resources/views/carrito/index.blade.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/resources/views/carrito/index.blade.php
+> git cat-file -s d19eee519d6105cb228e7199b5e439234d836e30
+> git show --textconv :resources/views/productos/editar.blade.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/resources/views/productos/editar.blade.php
+> git cat-file -s d80c9085e95e2c9773283cca1855944c544dee81
+> git show --textconv :routes/web.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/routes/web.php
+> git cat-file -s 19a6ba470b93f0566d5ec06e8e13f2de9370d439
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :resources/views/productos/editar.blade.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/resources/views/productos/editar.blade.php
+> git cat-file -s d80c9085e95e2c9773283cca1855944c544dee81
+> git show --textconv :app/Http/Controllers/OrdenCompraController.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/app/Http/Controllers/OrdenCompraController.php
+> git show --textconv :app/Http/Controllers/ProcarritosController.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/app/Http/Controllers/ProcarritosController.php
+> git cat-file -s 43751d00a5e905e6de0682543063441eec961844
+> git show --textconv :app/Http/Controllers/OrdenCompraController.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/app/Http/Controllers/OrdenCompraController.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :app/Http/Controllers/ProductosController.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/app/Http/Controllers/ProductosController.php
+> git cat-file -s f07f7c8ce7ff3ce38624b20b54420d737713faef
+> git show --textconv :app/Http/Controllers/OrdenCompraController.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/app/Http/Controllers/OrdenCompraController.php
+> git show --textconv :app/Http/Controllers/ProductosController.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/app/Http/Controllers/ProductosController.php
+> git cat-file -s f07f7c8ce7ff3ce38624b20b54420d737713faef
+> git show --textconv :app/Http/Controllers/OrdenCompraController.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/app/Http/Controllers/OrdenCompraController.php
+> git show --textconv :app/Http/Controllers/ProductosController.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/app/Http/Controllers/ProductosController.php
+> git cat-file -s f07f7c8ce7ff3ce38624b20b54420d737713faef
+> git show --textconv :app/Http/Controllers/OrdenCompraController.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/app/Http/Controllers/OrdenCompraController.php
+> git show --textconv :resources/views/carrito/index.blade.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/resources/views/carrito/index.blade.php
+> git cat-file -s d19eee519d6105cb228e7199b5e439234d836e30
+> git show --textconv :routes/web.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/routes/web.php
+> git cat-file -s 19a6ba470b93f0566d5ec06e8e13f2de9370d439
+> git show --textconv :resources/views/carrito/index.blade.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/resources/views/carrito/index.blade.php
+> git cat-file -s d19eee519d6105cb228e7199b5e439234d836e30
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :app/Http/Controllers/CarritosController.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/app/Http/Controllers/CarritosController.php
+> git cat-file -s 770fe977331fb818fc2e1590437602aea2163d61
+> git show --textconv :resources/views/carrito/index.blade.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/resources/views/carrito/index.blade.php
+> git cat-file -s d19eee519d6105cb228e7199b5e439234d836e30
+> git show --textconv :routes/web.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/routes/web.php
+> git cat-file -s 19a6ba470b93f0566d5ec06e8e13f2de9370d439
+> git show --textconv :app/Http/Controllers/ProcarritosController.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/app/Http/Controllers/ProcarritosController.php
+> git cat-file -s 43751d00a5e905e6de0682543063441eec961844
+> git show --textconv :app/Http/Controllers/OrdenCompraController.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/app/Http/Controllers/OrdenCompraController.php
+> git show --textconv :resources/views/carrito/index.blade.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/resources/views/carrito/index.blade.php
+> git cat-file -s d19eee519d6105cb228e7199b5e439234d836e30
+> git show --textconv :app/Http/Controllers/OrdenCompraController.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/app/Http/Controllers/OrdenCompraController.php
+> git show --textconv :app/Http/Controllers/ProcarritosController.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/app/Http/Controllers/ProcarritosController.php
+> git cat-file -s 43751d00a5e905e6de0682543063441eec961844
+> git show --textconv :resources/views/carrito/index.blade.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/resources/views/carrito/index.blade.php
+> git cat-file -s d19eee519d6105cb228e7199b5e439234d836e30
+> git show --textconv :app/Http/Controllers/OrdenCompraController.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/app/Http/Controllers/OrdenCompraController.php
+> git show --textconv :resources/views/carrito/index.blade.php
+> git ls-files --stage -- /var/www/html/carniceria2.0/resources/views/carrito/index.blade.php
+> git cat-file -s d19eee519d6105cb228e7199b5e439234d836e30

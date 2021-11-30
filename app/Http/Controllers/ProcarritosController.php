@@ -139,6 +139,9 @@ class ProcarritosController extends Controller
         if($fail){
             return back();
         }
+        else{
+            print "error";
+        }
     }
 
     /**

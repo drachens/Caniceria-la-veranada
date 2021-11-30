@@ -1,0 +1,7 @@
+[2021-11-28 14:25:51.843] [sharedprocess] [info] Installing extension: batisteo.vscode-django
+[2021-11-28 14:25:53.072] [sharedprocess] [info] Downloaded extension: batisteo.vscode-django /var/www/html/carniceria2.0/~/.vscode-root/CachedExtensionVSIXs/batisteo.vscode-django-1.8.0
+[2021-11-28 14:25:53.745] [sharedprocess] [info] Extracted extension to /home/drachen/.vscode/extensions/.e3db9957-fcda-43c3-949c-182127b9eb3f: batisteo.vscode-django
+[2021-11-28 14:25:53.884] [sharedprocess] [info] Renamed to /home/drachen/.vscode/extensions/batisteo.vscode-django-1.8.0
+[2021-11-28 14:25:53.891] [sharedprocess] [info] Installation completed. batisteo.vscode-django
+[2021-11-28 14:25:54.211] [sharedprocess] [info] Extensions installed successfully: batisteo.vscode-django
+[2021-11-28 14:26:25.441] [sharedprocess] [info] Starting to clean up unused language packs.

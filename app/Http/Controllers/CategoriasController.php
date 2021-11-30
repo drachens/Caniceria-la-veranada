@@ -19,6 +19,61 @@ class CategoriasController extends Controller
         return($categorias);
     }
 
+    public function indexEditCat(){
+        $categorias = Categorias::all();
+        
+        return view('categorias.editCat',compact('categorias'));
+    }
+    public function editCat(Request $request){
+        $id = $request->id;
+        $nuevo_nombre = $request->nombre;
+        $nueva_descri = $request->descri;
+        $antiguo_nombre = Categorias::where('id',$id)->first()->nombre;
+        $antigua_descri = Categorias::where('id',$id)->first()->descri;
+
+        $validator = Validator::make($request->all(),[
+            'nombre'=>'max:255|string',
+            'descri'=>'max:66535|string|nullable',
+        ]);
+        $validated = $validator->validated();
+        
+        if ($validator->fails()) {
+            return back()
+            ->withErrors($validator)
+            ->withInput($validated);
+        }
+
+        $exist = Categorias::where('id',$id)->first();
+        if($exist){
+            if(!($nuevo_nombre==$antiguo_nombre)){
+                $update1 = Categorias::where('id',$id)
+                ->update([
+                    'nombre'=>$nuevo_nombre,
+                ]);
+                if($nueva_descri){
+                    if(!($nueva_descri == $antigua_descri)){
+                        $update2 = Categorias::where('id',$id)
+                        ->update([
+                            'descri'=>$nueva_descri,
+                        ]);
+                    }
+                }
+                $nombreFinal = $nuevo_nombre;
+            }
+            else{
+                if($nueva_descri){
+                    if(!($nueva_descri == $antigua_descri)){
+                        $update2 = Categorias::where('id',$id)
+                        ->update([
+                            'descri'=>$nueva_descri,
+                        ]);
+                    }
+                }
+                $nombreFinal = $antiguo_nombre;
+            }
+        }
+        return redirect('/editCategoria')->with('success','Categoría '.$nombreFinal.' editada satisfactoriamente.');
+    }
     /**
      * Show the form for creating a new resource.
      *

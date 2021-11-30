@@ -7,6 +7,7 @@
     foreach($carrito as $prod){
         $monto = $monto + $prod->cantidad*$prod->precio;
     }
+    session(['monto'=>$monto]);
 ?>
 <div class="row">
     <div class="col-lg-10 col-md-10 col-sm-12 offset-lg-1 offset-md-1 text-center">
@@ -57,7 +58,21 @@
                 <hr>
                 @endforeach
                 <h4 class="text-center">Monto total: ${{$monto}}</h4>
-                <button class="btn btn-success btn-block" disabled>Pagar</button>
+                <form action="{{url('crearOrden')}}" method="post" id="formCompra" onsubmit="return confirmar()">
+                    @csrf
+                    @if(Session::has('error'))
+                </form>  
+                    <button type="button" class="btn btn-success btn-block" disabled >Hacer pedido</button>
+                    <div class="mt-3 alert alert-danger">
+                            {{ Session::get('error') }}
+                            @if(Session::has('error'))
+                            <a href="/miperfil/update/{{Session::get('LoggedUser')}}">Completar datos </a>.
+                            @endif
+                        </div>
+                    @else
+                    <button type="submit" id="buttonCompra" form="formCompra" class="btn btn-success btn-block">Hacer pedido</button>
+                    @endif
+                
             </div>
         </div>
     </div>
@@ -65,3 +80,14 @@
 
 <hr>
 @endsection
+<script type="text/javascript">
+    function confirmar(){
+        var opcion = confirm("¿Desea confirmar el pedido?");
+        if(opcion){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+</script>

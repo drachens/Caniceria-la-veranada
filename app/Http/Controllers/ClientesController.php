@@ -117,9 +117,9 @@ class ClientesController extends Controller
             'ciudad'=>'max:255',
             'calle'=>'max:255',
             'numero'=>'max:255',
-            'telefono'=>'nullable|regex:/^\+56/|not_regex:/[a-zA-Z]/|max:12|min:12',
+            'telefono'=>'required|regex:/^\+56/|not_regex:/[a-zA-Z]/|max:12|min:12',
             'password'=>'max:255|min:8', 
-            'rut'=>'nullable|regex:/^\d{1,2}\.\d{3}\.\d{3}-[\dk]$/|max:255',
+            'rut'=>'required|regex:/^\d{1,2}\.\d{3}\.\d{3}-[\dk]$/|max:255|unique:clientes,rut',
         ]);
         $validated = $validator->validated();
         if ($validator->fails()) {

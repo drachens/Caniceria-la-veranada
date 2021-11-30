@@ -15553,18 +15553,29 @@ a.text-dark:focus {
 .logo {
   width: 5em;
 }
-.btn-circle.btn-sm {
-    width: 30px;
-    height: 30px;
-    padding: 6px 0px;
-    border-radius: 15px;
-    font-size: 8px;
-    text-align: center;
+
+.btn-circle.btn-sm,
+.btn-group-sm > .btn-circle.btn {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  font-size: 8px;
+  text-align: center;
 }
-.bg-prod{
-  background-color: #ffe1aab6;
+
+.text-gold {
+  color: #b49322;
 }
-.img-producto{
-  width: 16em;
-  max-height: 9em;
+
+.bg-dark {
+  background-color: black;
 }
+
+.btn-gold {
+  background-color: #b49322;
+  color: black;
+  text-align: center;
+}
+
+

@@ -1,0 +1,117 @@
+[2021-11-27 14:32:34.330] [exthost] [info] extension host started
+[2021-11-27 14:32:34.649] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication {"startup":false,"extensionId":{"value":"vscode.microsoft-authentication","_lower":"vscode.microsoft-authentication"},"activationEvent":"onAuthenticationRequest:microsoft"}
+[2021-11-27 14:32:34.649] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js
+[2021-11-27 14:32:34.665] [exthost] [info] ExtensionService#_doActivateExtension vscode.php-language-features {"startup":false,"extensionId":{"value":"vscode.php-language-features","_lower":"vscode.php-language-features"},"activationEvent":"onLanguage:php"}
+[2021-11-27 14:32:34.665] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/php-language-features/dist/phpMain
+[2021-11-27 14:32:34.675] [exthost] [info] ExtensionService#_doActivateExtension bmewburn.vscode-intelephense-client {"startup":false,"extensionId":{"value":"bmewburn.vscode-intelephense-client","_lower":"bmewburn.vscode-intelephense-client"},"activationEvent":"onLanguage:php"}
+[2021-11-27 14:32:34.675] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/drachen/.vscode/extensions/bmewburn.vscode-intelephense-client-1.7.1/lib/extension
+[2021-11-27 14:32:34.696] [exthost] [info] ExtensionService#_doActivateExtension rifi2k.format-html-in-php {"startup":false,"extensionId":{"value":"rifi2k.format-html-in-php","_lower":"rifi2k.format-html-in-php"},"activationEvent":"onLanguage:php"}
+[2021-11-27 14:32:34.696] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/drachen/.vscode/extensions/rifi2k.format-html-in-php-1.7.0/out/extension
+[2021-11-27 14:32:34.733] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2021-11-27 14:32:34.733] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2021-11-27 14:32:34.736] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-11-27 14:32:34.736] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/git/dist/main
+[2021-11-27 14:32:34.763] [exthost] [info] ExtensionService#_doActivateExtension christian-kohler.path-intellisense {"startup":true,"extensionId":{"value":"christian-kohler.path-intellisense","_lower":"christian-kohler.path-intellisense"},"activationEvent":"*"}
+[2021-11-27 14:32:34.763] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/drachen/.vscode/extensions/christian-kohler.path-intellisense-2.5.0/out/extension.js
+[2021-11-27 14:32:34.788] [exthost] [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css {"startup":true,"extensionId":{"value":"ecmel.vscode-html-css","_lower":"ecmel.vscode-html-css"},"activationEvent":"*"}
+[2021-11-27 14:32:34.788] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/drachen/.vscode/extensions/ecmel.vscode-html-css-1.10.2/dist/extension.js
+[2021-11-27 14:32:34.816] [exthost] [info] ExtensionService#_doActivateExtension kiteco.kite {"startup":true,"extensionId":{"value":"kiteco.kite","_lower":"kiteco.kite"},"activationEvent":"*"}
+[2021-11-27 14:32:34.816] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/drachen/.vscode/extensions/kiteco.kite-0.147.0/dist/kite-extension
+[2021-11-27 14:32:34.850] [exthost] [info] ExtensionService#_doActivateExtension Zignd.html-css-class-completion {"startup":true,"extensionId":{"value":"Zignd.html-css-class-completion","_lower":"zignd.html-css-class-completion"},"activationEvent":"*"}
+[2021-11-27 14:32:34.850] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/drachen/.vscode/extensions/zignd.html-css-class-completion-1.20.0/dist/extension.js
+[2021-11-27 14:32:34.947] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm {"startup":true,"extensionId":{"value":"vscode.npm","_lower":"vscode.npm"},"activationEvent":"workspaceContains:package.json"}
+[2021-11-27 14:32:34.947] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/npm/dist/npmMain
+[2021-11-27 14:32:37.155] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.js-debug {"startup":false,"extensionId":{"value":"ms-vscode.js-debug","_lower":"ms-vscode.js-debug"},"activationEvent":"onCommand:extension.js-debug.clearAutoAttachVariables"}
+[2021-11-27 14:32:37.161] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/ms-vscode.js-debug/src/extension.js
+[2021-11-27 14:32:37.416] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":false,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-11-27 14:32:37.417] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/github/dist/extension.js
+[2021-11-27 14:32:37.602] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication {"startup":false,"extensionId":{"value":"vscode.github-authentication","_lower":"vscode.github-authentication"},"activationEvent":"onAuthenticationRequest:github"}
+[2021-11-27 14:32:37.602] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/github-authentication/dist/extension.js
+[2021-11-27 14:32:38.218] [exthost] [info] eager extensions activated
+[2021-11-27 14:32:38.232] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":false,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"onStartupFinished"}
+[2021-11-27 14:32:38.232] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/emmet/dist/node/emmetNodeMain
+[2021-11-27 14:32:38.243] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":false,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"onStartupFinished"}
+[2021-11-27 14:32:38.243] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/merge-conflict/dist/mergeConflictMain
+[2021-11-27 14:32:38.246] [exthost] [info] ExtensionService#_doActivateExtension vscode.testing-editor-contributions {"startup":false,"extensionId":{"value":"vscode.testing-editor-contributions","_lower":"vscode.testing-editor-contributions"},"activationEvent":"onStartupFinished"}
+[2021-11-27 14:32:38.246] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/testing-editor-contributions/dist/extension.js
+[2021-11-27 14:32:38.247] [exthost] [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint {"startup":false,"extensionId":{"value":"dbaeumer.vscode-eslint","_lower":"dbaeumer.vscode-eslint"},"activationEvent":"onStartupFinished"}
+[2021-11-27 14:32:38.248] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/drachen/.vscode/extensions/dbaeumer.vscode-eslint-2.1.20/client/out/extension
+[2021-11-27 15:11:41.421] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"extensionId":{"value":"vscode.configuration-editing","_lower":"vscode.configuration-editing"},"activationEvent":"onLanguage:json"}
+[2021-11-27 15:11:41.422] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/configuration-editing/dist/configurationEditingMain
+[2021-11-27 15:11:41.449] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing {"startup":false,"extensionId":{"value":"vscode.extension-editing","_lower":"vscode.extension-editing"},"activationEvent":"onLanguage:json"}
+[2021-11-27 15:11:41.450] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/extension-editing/dist/extensionEditingMain
+[2021-11-27 15:11:41.476] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features {"startup":false,"extensionId":{"value":"vscode.json-language-features","_lower":"vscode.json-language-features"},"activationEvent":"onLanguage:json"}
+[2021-11-27 15:11:41.477] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/json-language-features/client/dist/node/jsonClientMain
+[2021-11-27 15:11:41.522] [exthost] [info] ExtensionService#_doActivateExtension eg2.vscode-npm-script {"startup":false,"extensionId":{"value":"eg2.vscode-npm-script","_lower":"eg2.vscode-npm-script"},"activationEvent":"onLanguage:json"}
+[2021-11-27 15:11:41.522] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/drachen/.vscode/extensions/eg2.vscode-npm-script-0.3.23/dist/extension
+[2021-11-27 16:04:52.415] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"extensionId":{"value":"vscode.typescript-language-features","_lower":"vscode.typescript-language-features"},"activationEvent":"onLanguage:typescript"}
+[2021-11-27 16:04:52.416] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/typescript-language-features/dist/extension
+[2021-11-27 16:04:52.518] [exthost] [info] ExtensionService#_doActivateExtension christian-kohler.npm-intellisense {"startup":false,"extensionId":{"value":"christian-kohler.npm-intellisense","_lower":"christian-kohler.npm-intellisense"},"activationEvent":"onLanguage:typescript"}
+[2021-11-27 16:04:52.519] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/drachen/.vscode/extensions/christian-kohler.npm-intellisense-1.4.0/out/src/extension
+[2021-11-27 16:04:52.686] [exthost] [info] ExtensionService#_doActivateExtension steoates.autoimport {"startup":false,"extensionId":{"value":"steoates.autoimport","_lower":"steoates.autoimport"},"activationEvent":"onLanguage:typescript"}
+[2021-11-27 16:04:52.686] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/drachen/.vscode/extensions/steoates.autoimport-1.5.4/out/src/extension
+[2021-11-27 16:04:52.952] [exthost] [info] ExtensionService#_doActivateExtension VisualStudioExptTeam.vscodeintellicode {"startup":false,"extensionId":{"value":"VisualStudioExptTeam.vscodeintellicode","_lower":"visualstudioexptteam.vscodeintellicode"},"activationEvent":"onLanguage:typescript"}
+[2021-11-27 16:04:52.952] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/drachen/.vscode/extensions/visualstudioexptteam.vscodeintellicode-1.2.14/dist/intellicode
+[2021-11-27 18:31:30.624] [exthost] [error] [vscode.emmet] provider FAILED
+[2021-11-27 18:31:30.631] [exthost] [error] TypeError: Cannot read property 'find' of undefined
+    at t.DefaultCompletionItemProvider.provideCompletionItemsInternal (/usr/share/code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:61284)
+    at t.DefaultCompletionItemProvider.provideCompletionItems (/usr/share/code/resources/app/extensions/emmet/dist/node/emmetNodeMain.js:1:59740)
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:172114
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:64:12043
+    at new Promise (<anonymous>)
+    at m (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:64:12015)
+    at M.provideCompletionItems (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:172094)
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:190577
+    at Ce._withAdapter (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:180570)
+    at Ce.$provideCompletionItems (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:190553)
+    at l._doInvokeHandler (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:91:12836)
+    at l._invokeHandler (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:91:12520)
+    at l._receiveRequest (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:91:11136)
+    at l._receiveOneMessage (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:91:9973)
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:91:8074
+    at fire (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:57:1836)
+    at S.fire (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:15497)
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:106:29764
+    at fire (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:57:1836)
+    at S.fire (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:15497)
+    at t._receiveMessage (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:20755)
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:17641
+    at fire (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:57:1836)
+    at acceptChunk (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:12862)
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:12210
+    at Socket.v (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:106:13195)
+    at Socket.emit (events.js:315:20)
+    at Socket.EventEmitter.emit (domain.js:467:12)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at Socket.Readable.push (internal/streams/readable.js:223:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:188:23)
+[2021-11-28 00:57:41.513] [exthost] [error] [bmewburn.vscode-intelephense-client] provider FAILED
+[2021-11-28 00:57:41.560] [exthost] [error] Canceled: Canceled
+    at w.makeCancelError (/home/drachen/.vscode/extensions/bmewburn.vscode-intelephense-client-1.7.1/lib/extension.js:1:128391)
+    at w.handleFailedRequest (/home/drachen/.vscode/extensions/bmewburn.vscode-intelephense-client-1.7.1/lib/extension.js:1:128242)
+    at /home/drachen/.vscode/extensions/bmewburn.vscode-intelephense-client-1.7.1/lib/extension.js:1:87663
+    at M.resolveCompletionItem (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:172799)
+[2021-11-28 01:31:40.537] [exthost] [error] [bmewburn.vscode-intelephense-client] provider FAILED
+[2021-11-28 01:31:40.537] [exthost] [error] TypeError: Cannot read property 'kind' of undefined
+    at /home/drachen/.vscode/extensions/bmewburn.vscode-intelephense-client-1.7.1/lib/extension.js:1:165849
+    at asHover (/home/drachen/.vscode/extensions/bmewburn.vscode-intelephense-client-1.7.1/lib/extension.js:1:166062)
+[2021-11-28 04:07:48.723] [exthost] [error] [bmewburn.vscode-intelephense-client] provider FAILED
+[2021-11-28 04:07:48.723] [exthost] [error] Canceled: Canceled
+    at w.makeCancelError (/home/drachen/.vscode/extensions/bmewburn.vscode-intelephense-client-1.7.1/lib/extension.js:1:128391)
+    at w.handleFailedRequest (/home/drachen/.vscode/extensions/bmewburn.vscode-intelephense-client-1.7.1/lib/extension.js:1:128242)
+    at /home/drachen/.vscode/extensions/bmewburn.vscode-intelephense-client-1.7.1/lib/extension.js:1:88457
+[2021-11-28 05:17:16.867] [exthost] [error] [bmewburn.vscode-intelephense-client] provider FAILED
+[2021-11-28 05:17:16.867] [exthost] [error] Canceled: Canceled
+    at w.makeCancelError (/home/drachen/.vscode/extensions/bmewburn.vscode-intelephense-client-1.7.1/lib/extension.js:1:128391)
+    at w.handleFailedRequest (/home/drachen/.vscode/extensions/bmewburn.vscode-intelephense-client-1.7.1/lib/extension.js:1:128242)
+    at /home/drachen/.vscode/extensions/bmewburn.vscode-intelephense-client-1.7.1/lib/extension.js:1:87663
+    at M.resolveCompletionItem (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:172799)
+[2021-11-28 05:36:31.354] [exthost] [error] [bmewburn.vscode-intelephense-client] provider FAILED
+[2021-11-28 05:36:31.354] [exthost] [error] Canceled: Canceled
+    at w.makeCancelError (/home/drachen/.vscode/extensions/bmewburn.vscode-intelephense-client-1.7.1/lib/extension.js:1:128391)
+    at w.handleFailedRequest (/home/drachen/.vscode/extensions/bmewburn.vscode-intelephense-client-1.7.1/lib/extension.js:1:128242)
+    at /home/drachen/.vscode/extensions/bmewburn.vscode-intelephense-client-1.7.1/lib/extension.js:1:87663
+    at M.resolveCompletionItem (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:172799)
+[2021-11-28 06:24:54.752] [exthost] [info] extension host terminating: received terminate message from renderer
+[2021-11-28 06:24:55.798] [exthost] [info] exiting with code 0

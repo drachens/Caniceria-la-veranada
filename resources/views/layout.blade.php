@@ -58,37 +58,60 @@ if(Session::get('LoggedUser')){
                     @endif
                     @if(Session::has('LoggedUser'))
                         @if(Session::get('type')=='admin' or Session::get('type')=='vendedor')
+                        <!--- PEDIDOS --->
                         <li class="nav-item dropdown">
-                        <button class="btn btn-outline-success my-2 my-sm-0" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administrar</button> 
+                            <button class="btn btn-success mr-2 my-sm-0" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pedidos</button>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/confirmarPedidos">Confirmación de pedidos</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="/retiroPedidos">Pedidos por retirar</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="/verBoletas">Historial ventas</a>
+                            </div>                        
+                        </li>
+                        <!--- ADMINISTRAR --->
+                        <li class="nav-item dropdown">
+                        <button class="btn btn-success my-2 my-sm-0" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administrar</button> 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="{{ url('/createProd') }}">Crear producto</a>
-                                <div class="dropdown-divider"></div>
+                                <!---<div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Crear oferta</a>
                                 <a class="dropdown-item" href="#">Eliminar oferta</a>
-                                <a class="dropdown-item" href="#">Editar oferta</a>
+                                <a class="dropdown-item" href="#">Editar oferta</a>--->
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="{{ url('/categorias/form/crear') }}">Crear categoria</a>
-                                <a class="dropdown-item" href="#">Eliminar categoria</a>
-                                <a class="dropdown-item" href="#">Editar categoria</a>
+                               <!---<a class="dropdown-item" href="#">Eliminar categoria</a>--->
+                                <a class="dropdown-item" href="/editCategoria">Editar categoria</a>
                             @if(Session::get('type')=='admin')
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="{{ route('ingresoAdmin') }}">Crear usuarios</a>
-                                <a class="dropdown-item" href="#">Eliminar usuarios</a>
+                                <a class="dropdown-item" href="/eliminarUsuariosIndex">Eliminar usuarios</a>
                             </div>
                             @endif
                         </li> 
                         @endif
+                        <!--- HELLO USER --->
                         <li class="nav-item dropdown">
-                            <button class="btn btn-primary ml-2 mr-2" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo "Hola, ".ucwords($userInfo->nombre); ?>
+                            <button class="btn btn-gold ml-2 mr-2" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo "Hola, ".ucwords($userInfo->nombre); ?>
                             <i class="ml-2 fa fa-chevron-down"></i>
                             </button>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
                                 <a class="dropdown-item" href="/miperfil/<?php if(Session::get('type')=='admin' or Session::get('type')=='vendedor'){echo "updateAd";}else if(Session::get('type')=='client'){echo "update";} ?>/{{ Session::get('LoggedUser') }}">Ver Perfil <i class=" ml-2 fa fa-user-circle"></i> </a>
+                                
+                                @if(Session::get('type')=='client')
+                                <a class="dropdown-item" href="/miperfil/mispedidos/{{Session::get('LoggedUser')}}">Ver pedidos <i class="ml-2 fas fa-clipboard"></i></a>
+                                @endif
+                                
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="{{ route('logout') }}">Cerrar Sesión <i class="ml-2 fa fa-arrow-right" aria-hidden="true"></i> </a>
                             </div>
                         </li>
+                    
+                        @if(Session::get('type')=='client')
+
                         <a href="/showCarritoLogin/{{Session::get('LoggedUser')}}" class="btn btn-danger" type="button"><i class=" mt-1 fas fa-shopping-cart"></i></a>
+                        
+                        @endif
                         
                     @endif
                 </ul>

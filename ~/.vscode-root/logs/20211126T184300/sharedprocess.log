@@ -1,0 +1,7 @@
+[2021-11-26 18:43:17.866] [sharedprocess] [info] Installing extension: christian-kohler.path-intellisense
+[2021-11-26 18:43:18.868] [sharedprocess] [info] Downloaded extension: christian-kohler.path-intellisense /var/www/html/carniceria2.0/~/.vscode-root/CachedExtensionVSIXs/christian-kohler.path-intellisense-2.5.0
+[2021-11-26 18:43:19.351] [sharedprocess] [info] Extracted extension to /home/drachen/.vscode/extensions/.3c2d2241-bd9e-4551-9cf5-7a6c764d6cf0: christian-kohler.path-intellisense
+[2021-11-26 18:43:19.423] [sharedprocess] [info] Renamed to /home/drachen/.vscode/extensions/christian-kohler.path-intellisense-2.5.0
+[2021-11-26 18:43:19.429] [sharedprocess] [info] Installation completed. christian-kohler.path-intellisense
+[2021-11-26 18:43:19.592] [sharedprocess] [info] Extensions installed successfully: christian-kohler.path-intellisense
+[2021-11-26 18:43:50.869] [sharedprocess] [info] Starting to clean up unused language packs.
